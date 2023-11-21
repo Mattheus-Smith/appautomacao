@@ -43,41 +43,15 @@ class _ArConficionadoPage extends State<ArConficionadoPage>{
               child: Image.asset("assets/images/arcondicionado.jpg", width: 200),
             ),
             SizedBox(height: alturaEntreLinhas),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly, //Center Row contents horizontally,
-              children: [
-                Text('Ar Condicionado 1', style: optionStyle),
-                Switch(value: Ar1, activeColor: Color(0xFF142434) ,onChanged: (value) {
-                  setState(() {
-                    Ar1 = value;
-                  });
-                })
-              ],
+            Container(
+              child: Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: GridView(
+                  children: [Container(decoration: BoxDecoration(borderRadius: BorderRadius.circular(20), color: Colors.red,),),],
+                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 1, mainAxisSpacing: 10, crossAxisSpacing: 10,),
+                ),
+              ),
             ),
-            SizedBox(height: alturaEntreLinhas),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly, //Center Row contents horizontally,
-              children: [
-                Text('Ar Condicionado 2', style: optionStyle),
-                Switch(value: Ar2, activeColor: Color(0xFF142434) ,onChanged: (value) {
-                  setState(() {
-                    Ar2 = value;
-                  });
-                })
-              ],
-            ),
-            SizedBox(height: alturaEntreLinhas),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly, //Center Row contents horizontally,
-              children: [
-                Text('Ar Condicionado 3', style: optionStyle),
-                Switch(value: Ar3, activeColor: Color(0xFF142434) ,onChanged: (value) {
-                  setState(() {
-                    Ar3 = value;
-                  });
-                })
-              ],
-            )
           ],
         ),
       ),
