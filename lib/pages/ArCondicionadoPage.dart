@@ -21,8 +21,8 @@ class _ArConficionadoPage extends State<ArConficionadoPage>{
   @override
   Widget build(BuildContext context) {
     Offset distance = Offset(5, 5);
-    double altBtns = 150;
-    double larBtns = 150;
+    double altBtns = 120;
+    double larBtns = 300;
     //=========btn 1
     double blur1 = isPressed1 ? 15.0 : 25.0;
     Color cor1 = isPressed1 ? Color(0xFF142434) : Color(0xFF0c151f);
@@ -85,20 +85,33 @@ class _ArConficionadoPage extends State<ArConficionadoPage>{
                             )
                           ],
                         ),
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+
                           children: [
-                            Container(
-                              child: Image.asset("assets/icons/airconditioner.png", width: 100, color: Colors.white,),
+                            Column(
+                              children: [
+                                Container(
+                                  child: Image.asset("assets/icons/airconditioner.png", width: 80, color: Colors.white,),
+                                ),
+                                Text(texto1, style: TextStyle(fontSize: 16, color: Colors.white),)
+                              ],
                             ),
                             Text("Ar Condicionado 1", style: TextStyle(fontSize: 16, color: Colors.white),),
-                            Text(texto1, style: TextStyle(fontSize: 16, color: Colors.white),)
+
                           ],
                         ),
                       ),
                     ),
                   ),
+                ],
+              ),
 
+              //linha 2
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
                   Padding(
                     padding: const EdgeInsets.all(10.0),
                     child: GestureDetector(
@@ -122,14 +135,20 @@ class _ArConficionadoPage extends State<ArConficionadoPage>{
                             )
                           ],
                         ),
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+
                           children: [
-                            Container(
-                              child: Image.asset("assets/icons/airconditioner.png", width: 100, color: Colors.white,),
+                            Column(
+                              children: [
+                                Container(
+                                  child: Image.asset("assets/icons/airconditioner.png", width: 80, color: Colors.white,),
+                                ),
+                                Text(texto2, style: TextStyle(fontSize: 16, color: Colors.white),)
+                              ],
                             ),
                             Text("Ar Condicionado 2", style: TextStyle(fontSize: 16, color: Colors.white),),
-                            Text(texto2, style: TextStyle(fontSize: 16, color: Colors.white),)
+
                           ],
                         ),
                       ),
@@ -138,7 +157,7 @@ class _ArConficionadoPage extends State<ArConficionadoPage>{
                 ],
               ),
 
-              //linha 2
+              //linha 3
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -166,14 +185,20 @@ class _ArConficionadoPage extends State<ArConficionadoPage>{
                             )
                           ],
                         ),
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+
                           children: [
-                            Container(
-                              child: Image.asset("assets/icons/airconditioner.png", width: 100, color: Colors.white,),
+                            Column(
+                              children: [
+                                Container(
+                                  child: Image.asset("assets/icons/airconditioner.png", width: 80, color: Colors.white,),
+                                ),
+                                Text(texto3, style: TextStyle(fontSize: 16, color: Colors.white),)
+                              ],
                             ),
                             Text("Ar Condicionado 3", style: TextStyle(fontSize: 16, color: Colors.white),),
-                            Text(texto3, style: TextStyle(fontSize: 16, color: Colors.white),)
+
                           ],
                         ),
                       ),
@@ -181,6 +206,8 @@ class _ArConficionadoPage extends State<ArConficionadoPage>{
                   ),
                 ],
               ),
+
+
             ],
           ),
         ),
