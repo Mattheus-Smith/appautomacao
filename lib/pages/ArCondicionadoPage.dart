@@ -25,15 +25,15 @@ class _ArConficionadoPage extends State<ArConficionadoPage>{
     double larBtns = 300;
     //=========btn 1
     double blur1 = isPressed1 ? 15.0 : 25.0;
-    Color cor1 = isPressed1 ? Color(0xFF142434) : Color(0xFF0c151f);
+    Color cor1 = isPressed1 ? Color(0xFF2b3948) : Color(0xFF0c151f);
     String texto1 = isPressed1 ? "OFF" : "ON";
     //=========btn 2
     double blur2 = isPressed2 ? 15.0 : 25.0;
-    Color cor2 = isPressed2 ? Color(0xFF142434) : Color(0xFF0c151f);
+    Color cor2 = isPressed2 ? Color(0xFF2b3948) : Color(0xFF0c151f);
     String texto2 = isPressed2 ? "OFF" : "ON";
     //=========btn 3
     double blur3 = isPressed3 ? 15.0 : 25.0;
-    Color cor3 = isPressed3 ? Color(0xFF142434) : Color(0xFF0c151f);
+    Color cor3 = isPressed3 ? Color(0xFF2b3948) : Color(0xFF0c151f);
     String texto3 = isPressed3 ? "OFF" : "ON";
     return Scaffold(
       body: SingleChildScrollView(
